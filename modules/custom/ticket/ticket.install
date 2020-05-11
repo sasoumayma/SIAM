@@ -1,0 +1,71 @@
+<?php
+/**
+ * @file
+ * Contains ticket.install..
+ */
+
+function ticket_schema() {
+  $schema['ticket'] = [
+    'description' => 'Stores ticket',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'nid' => [
+
+        'type' => 'int',
+        'not null' => TRUE,
+      ],
+      'titre' => [
+        'type' => 'text',
+        'length' => 50,
+        'not null' => TRUE,
+      ],
+      'description' => [
+        'type' => 'text',
+        'length' => 50,
+        'not null' => TRUE,
+      ],
+      'edition' => [
+        'type' => 'text',
+        'length' => 50,
+        'not null' => TRUE,
+      ],
+      'periode' => [
+        'type' => 'text',
+        'length' => 50,
+        'not null' => TRUE,
+      ],
+      'datetime' => [
+        'type' => 'varchar',
+        'length' => 50,
+        'not null' => TRUE,
+      ],
+      'adresse' => [
+        'type' => 'text',
+        'not null' => TRUE,
+      ],
+      'telephone' => [
+        'type' => 'text',
+        'not null' => TRUE,
+      ],
+      'logo' => [
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => TRUE,
+      ],
+      'created' => [
+        'type' => 'int',
+        'not null' => FALSE,
+        'default' => 0,
+      ]
+    ],
+    'primary key' => ['id'],
+    'indexes' => [
+      'node' => ['nid']
+    ],
+  ];
+  return $schema;
+}

@@ -1,0 +1,21 @@
+ticket.admin_settings_form:  
+  path: '/simple_form'
+  defaults:
+    _form: '\Drupal\ticket\Form\SimpleForm'
+    _title: 'FORM'
+    node: null 
+  requirements:
+    _permission: 'access content'
+  options:
+    _admin_route: TRUE  
+    parameters:
+      node:
+        type: entity:node 
+        
+# ticket.content:
+#   path: '/checkout'
+#   defaults:
+#     _controller: '\Drupal\ticket\Controller\myController'
+#     _title: 'Checkout'
+#   requirements:
+#     _permission: 'access content'
