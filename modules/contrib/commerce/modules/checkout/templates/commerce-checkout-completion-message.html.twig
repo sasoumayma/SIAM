@@ -12,7 +12,16 @@
 #}
 <div class="checkout-complete">
   {{ 'Your order number is @number.'|t({'@number': order_entity.getOrderNumber}) }} <br>
-  {{ 'You can view your order on your account page when logged in.'|t }} <br>
+  {{ 'You can view your order on your account page when logged in.'|t }} <br>        
+  {# {{ 'You can view your order on your account page when logged in.'|t }} {{order_entity.id.value()}} <br> #}
+
+
+ {% set order_id = order_entity.id %} 
+  
+{# nom de la route #}
+ <a href="{{ path('ticket.content' , {'order_id': order_id} ) }}">{{ 'Download details of my order'|t }}</a>
+
+ {# <a href="{{ path('ticket.content') }}">{{ 'Download my tickets'|t }}</a> #}
 
   {% if payment_instructions %}
     <div class="checkout-complete__payment-instructions">

@@ -114,6 +114,7 @@ class ComposerStaticInitf58dd9d2e64a825de7df7497c1354a33
         ),
         'G' => 
         array (
+            'GuzzleHttp\\Subscriber\\Oauth\\' => 28,
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
@@ -128,6 +129,11 @@ class ComposerStaticInitf58dd9d2e64a825de7df7497c1354a33
         array (
             'Drush\\Internal\\' => 15,
             'Drush\\' => 6,
+            'Drupal\\plugin\\' => 14,
+            'Drupal\\payment_reference\\' => 25,
+            'Drupal\\payment_form\\' => 20,
+            'Drupal\\payment\\' => 15,
+            'Drupal\\currency\\' => 16,
             'Drupal\\Driver\\' => 14,
             'Drupal\\Core\\' => 12,
             'Drupal\\Composer\\Plugin\\VendorHardening\\' => 39,
@@ -153,6 +159,8 @@ class ComposerStaticInitf58dd9d2e64a825de7df7497c1354a33
             'Consolidation\\AnnotatedCommand\\' => 31,
             'Composer\\Semver\\' => 16,
             'Composer\\Installers\\' => 20,
+            'Commercie\\Currency\\' => 19,
+            'Commercie\\CurrencyExchange\\' => 27,
             'CommerceGuys\\Intl\\' => 18,
             'CommerceGuys\\Addressing\\' => 24,
         ),
@@ -351,6 +359,10 @@ class ComposerStaticInitf58dd9d2e64a825de7df7497c1354a33
         array (
             0 => __DIR__ . '/..' . '/container-interop/container-interop/src/Interop/Container',
         ),
+        'GuzzleHttp\\Subscriber\\Oauth\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/oauth-subscriber/src',
+        ),
         'GuzzleHttp\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
@@ -382,6 +394,26 @@ class ComposerStaticInitf58dd9d2e64a825de7df7497c1354a33
         'Drush\\' => 
         array (
             0 => __DIR__ . '/..' . '/drush/drush/src',
+        ),
+        'Drupal\\plugin\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/modules/contrib/plugin/src',
+        ),
+        'Drupal\\payment_reference\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/modules/contrib/payment/modules/payment_reference/src',
+        ),
+        'Drupal\\payment_form\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/modules/contrib/payment/modules/payment_form/src',
+        ),
+        'Drupal\\payment\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/modules/contrib/payment/src',
+        ),
+        'Drupal\\currency\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/modules/contrib/currency/src',
         ),
         'Drupal\\Driver\\' => 
         array (
@@ -471,6 +503,14 @@ class ComposerStaticInitf58dd9d2e64a825de7df7497c1354a33
         array (
             0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
         ),
+        'Commercie\\Currency\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/commercie/currency/src',
+        ),
+        'Commercie\\CurrencyExchange\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/commercie/currency-exchange/src',
+        ),
         'CommerceGuys\\Intl\\' => 
         array (
             0 => __DIR__ . '/..' . '/commerceguys/intl/src',
@@ -502,6 +542,10 @@ class ComposerStaticInitf58dd9d2e64a825de7df7497c1354a33
         ),
         'P' => 
         array (
+            'PayPal' => 
+            array (
+                0 => __DIR__ . '/..' . '/paypal/rest-api-sdk-php/lib',
+            ),
             'PEAR' => 
             array (
                 0 => __DIR__ . '/..' . '/pear/pear_exception',

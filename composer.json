@@ -22,7 +22,9 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/core-vendor-hardening": "^8.8",
+        "drupal/paypal_payment": "^1.0@beta",
         "drush/drush": "^10.2",
+        "guzzlehttp/oauth-subscriber": "0.3.*",
         "mpdf/mpdf": "^8.0",
         "picqer/php-barcode-generator": "^2.0",
         "twbs/bootstrap": "^4.4"

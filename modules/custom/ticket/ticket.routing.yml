@@ -12,10 +12,15 @@ ticket.admin_settings_form:
       node:
         type: entity:node 
         
-# ticket.content:
-#   path: '/checkout'
-#   defaults:
-#     _controller: '\Drupal\ticket\Controller\myController'
-#     _title: 'Checkout'
-#   requirements:
-#     _permission: 'access content'
+ticket.content:
+  path: '/printCheckout/{order_id}'
+  defaults:
+    _controller: '\Drupal\ticket\Controller\myController::content'
+    _title: 'Checkout'
+  requirements:
+    _permission: 'access content'
+  options:
+    _admin_route: TRUE  
+
+
+# path: '/printCheckout/{id}'
